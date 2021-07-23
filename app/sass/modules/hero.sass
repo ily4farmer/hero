@@ -1,7 +1,7 @@
 .hero
     padding-top: 193px
     padding-bottom: 194px
-    background: url(../img/hero/bg.jpg) center/cover no-repeat, linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)), url(../img/hero/bg.jpg), url(../img/hero/bg.jpg), url(../img/hero/bg.jpg), linear-gradient(122.63deg, #F5F6FA 18.98%, rgba(237, 241, 247, 0.95) 87.07%)
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)), url(../img/hero/bg.jpg) center/cover no-repeat
     &-block
         display: flex
         flex-direction: column
@@ -17,8 +17,8 @@
         line-height: 52px
     &__subtitle
         margin-top: 24px
-        margin-bottom: 64px
-        max-width: 460px
+        margin-bottom: 60px
+        max-width: 430px
         font-weight: 600
         font-size: 22px
         line-height: 30px
@@ -32,7 +32,21 @@
         padding: 14px 32px
         background: #fff
         border-radius: 4px
-        transition: 1s
+        transition: 0.6s
     &__btn:hover
         opacity: .75   
-   
+
+@media screen and (max-width: 420px) 
+    .hero
+        &__title
+            font-size: 28px
+            line-height: 31px
+        &__subtitle
+            margin-top: 8px
+            margin-bottom: 40px
+            font-size: 18px
+            line-height: 24px
+        &__footer
+            grid-gap: 8px
+        &__btn
+            padding: 17px 29px
