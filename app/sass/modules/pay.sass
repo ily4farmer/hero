@@ -2,6 +2,7 @@
     padding-top: 149px
     padding-bottom: 217px
     &-block
+        border: 1px solid #ECECEC
         padding: 51px 40px
         max-width: 600px
         margin: auto
@@ -65,7 +66,8 @@
         font-weight: 600
     // информация о покупке
     &__list
-        padding-bottom: 24px
+        margin-bottom: 24px
+        border-bottom: 1px solid #ECECEC
         &-item
             display: flex
             justify-content: space-between
@@ -81,8 +83,9 @@
     // 
     &__status
         &-btn
+            line-height: 15px
             font-size: 12px
-            padding: 3px 10px
+            padding: 3px 10px 
             border: 1px solid #CCCCCC
             border-radius: 2px
         &-btn:last-child
@@ -106,12 +109,11 @@
         padding-top: 60px
         padding-bottom: 24px
         &-block
-            padding: 25px 16px
+            margin-left: 16px
+            margin-right: 16px
+            padding: 25px 0 24px 0 
         &__item
-            // width: 310px
             max-width: 310px
-            &-subtitle
-                max-width: 100%
             &-btn
                 width: 270px
         &__subtitle
