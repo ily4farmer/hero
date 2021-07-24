@@ -6,31 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="section hero">
+    <section class="section pay">
         <div class="container">
-            <div class="hero-block">
-                <h1 class="hero__title">
-                    Выбор одежды для работы больше не ваша забота
-                </h1>
-                <!-- /.hero__title -->
-                <p class="hero__subtitle">
-                    Комфортная медицинская одежда <br> для современных врачей
-                </p>
-                <!-- /.hero__subtitle -->
-                <div class="hero__footer">
-                    <a href="" class="hero__btn">Для женщин</a>
-                    <!-- /.hero__link -->
-                    <a href="" class="hero__btn">Для мужчин</a>
-                    <!-- /.hero__link -->
+            <div class="pay-block">
+                <h2 class="pay__title">Спасибо за заказ!</h2>
+                <!-- /.pay__title -->
+                <p class="pay__subtitle">Ваш заказ успешно оформлен. Мы свяжемся с вами в течении N часов</p>
+                <!-- /.pay__subtitle -->
+                <img src="../img/pay/pay.png" alt="pay" class="pay__img">
+                <div class="pay__content">
+                    <div class="pay__item">
+                        <h3 class="pay__item-title">Бесплатная консультация</h3>
+                        <!-- /.pay__item-title -->
+                        <p class="pay__item-subtitle">Вам перезвонит опытный косметолог и бесплатно вас проконсультирует</p>
+                        <!-- /.pay__item-subtitle -->
+                        <button class="pay__item-btn">Получить консультацию</button>
+                        <!-- /.pay__item-btn -->
+                    </div>
+                    <!-- /.pay__item -->
+                    <div class="pay__item">
+                        <h3 class="pay__item-title">Скидки и&nbsp;акции у&nbsp;вас в&nbsp;почтовом ящике</h3>
+                        <!-- /.pay__item-title -->
+                        <p class="pay__item-subtitle">Вы будете первыми получать информацию о акциях и специальных предложениях</p>
+                        <!-- /.pay__item-subtitle -->
+                        <button class="pay__item-btn">Подписаться на акции</button>
+                        <!-- /.pay__item-btn -->
+                    </div>
+                    <!-- /.pay__item -->
                 </div>
+                <!-- /.pay__content -->
+                <div class="pay__footer">
+                    <div class="pay__footer-block">
+                            <p class="pay__number">
+                                Заказ № 34556
+                                <img class="pay__footer-btn" src="../img/pay/btn.svg" alt="btn">
+                                <img class="pay__footer-btn" src="../img/pay/btn-2.svg" alt="btn">
+                            </p>
+                            <!-- /.pay__number -->
+                            <h4 class="pay__price">9500 ₽</h4>
+                            <!-- /.pay__price -->
+                    </div>
+                    <!-- /.pay__footer-block -->
+                    <ul class="pay__list">
+                        <li class="pay__list-item">
+                            <span>Способ оплаты</span>
+                            <span>Наличными курьеру</span>
+                        </li>
+                        <li class="pay__list-item">
+                            <span>Способ доставки</span>
+                            <span>Самовывоз</span>
+                        </li>
+                        <li class="pay__list-item">
+                            <span>Адрес доставки </span>
+                            <span>г Москва</span>
+                        </li>
+                        <li class="pay__list-item">
+                            <span>Получатель</span>
+                            <span>Иван 8(900)456-56-56</span>
+                        </li>
+                        <li class="pay__list-item pay__list-composition">
+                            Состав заказа
+                        </li>
+                        <li class="pay__list-item">
+                            <span>Крем, 1 шт</span>
+                            <span>123 ₽</span>
+                        </li>
+                    </ul>
+                    <div class="pay__footer-block">
+                        <div class="pay__status">
+                            <a href="#"  class="pay__status-btn">Принят</a>
+                            <!-- /.pay__status-btn -->
+                            <a href="#"  class="pay__status-btn">Не оплачен</a>
+                            <!-- /.pay__status-btn -->
+                        </div>
+                        <!-- /.pay__status -->
+                        <div class="pay__social">
+                            <span class="pay__social-text">Уведомлять</span>
+                            <a href="#" class="pay__social-icon">
+                                <img src="../img/pay/viber.svg" alt="viber">
+                            </a>
+                            <!-- /.pay__social-icon -->
+                            <a href="#" class="pay__social-icon">
+                                <img src="../img/pay/telegramm.svg" alt="telegram">
+                            </a>
+                            <!-- /.pay__social-icon -->
+                        </div>
+                        <!-- /.pay__social -->
+                </div>
+                <!-- /.pay__footer-block -->
+                </div>
+                <!-- /.pay__description -->
             </div>
-            <!-- /.hero-block -->
+            <!-- /.pay-block -->
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.section hero -->
+    <!-- /.section pay -->
     <script src="js/script.js"></script>
 </body>
 </html>
