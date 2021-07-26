@@ -13,6 +13,7 @@ const popup = () => {
             list.style.display = 'none';
             arrow.classList.remove("svg-top");
         }
+        
     });
 }
 
