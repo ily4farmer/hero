@@ -1,19 +1,21 @@
-
 const popup = () => {
-    const btn = document.querySelector('.pay__number'),
-          arrow = document.querySelector('.pay__footer-btn'),
-          list = document.querySelector('.pay__list');
-    
+    let toogleDown = (item) => {
+        const ch = item.clientHeight,
+            sh = item.scrollHeight,
+            isCollapsed = !ch,
+            noHeightSet = !item.style.height;
 
-    btn.addEventListener('click', ()=> {
-        if (list.style.display == 'none') {
-            list.style.display = 'block';
-            arrow.classList.add("svg-top");
-        } else {
-            list.style.display = 'none';
-            arrow.classList.remove("svg-top");
-        }
-        
+        item.style.height = (isCollapsed || noHeightSet ? sh : 0) + "px";
+        item.toggleAttribute('aria-selected');
+    }
+
+    let item = document.querySelector('[data-toggle-more]');
+
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        let toggleInfo = document.querySelector('[data-toggle-show]');
+        item.toggleAttribute('aria-selected');
+        toogleDown(toggleInfo);
     });
 }
 
